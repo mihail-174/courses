@@ -1,5 +1,8 @@
 export default defineNuxtConfig({
   target: 'static',
+  app: {
+    baseURL: '/courses/'
+  },
   router: {
     base: '/courses/'
   },
