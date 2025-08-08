@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - gh-pages
 env:
   BUILD_FOLDER: .output/public
 jobs:
@@ -18,7 +18,8 @@ jobs:
           node-version: "20"
       # Выберите свой собственный менеджер пакетов и сценарий сборки
       - run: npm install
-      - run: npx nuxt build --preset github_pages
+      #- run: npx nuxt build --preset github_pages
+      - run: npx nuxt generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
