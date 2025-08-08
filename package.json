@@ -6,9 +6,10 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "generate2": "npx nuxt build --preset github_pages",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d .output/public"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",

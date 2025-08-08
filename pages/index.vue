@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import {ref, onMounted} from 'vue'
 definePageMeta({
-    title: '14 Главная'
+    title: '17 Главная'
 })
 import type {Course} from '../server/types'
 const courses = ref<Course[]>([])
