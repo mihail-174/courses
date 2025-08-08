@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - main
+env:
+  BUILD_FOLDER: .output/public # or .output/public/yourrepositoryname/
 jobs:
   build:
     runs-on: ubuntu-latest
