@@ -1,1 +1,0 @@
-import{f as t,s,l as o,u as n,o as c,c as r,d as u,a as l,t as d}from"./4UpA0A4Z.js";const f=t({__name:"[id]",setup(i){const a=s(),e=o(()=>a.params.id);return n({title:`Страница курса ${e.value}`}),(p,m)=>(c(),r("div",null,[u(" Курс номер "),l("b",null,d(e.value),1)]))}});export{f as default};

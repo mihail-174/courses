@@ -1,1 +1,0 @@
-import{f as s,r,L as o,o as e,c as a,F as c,h as i,t as u}from"./4UpA0A4Z.js";const _=s({__name:"index",setup(l){const n=r([]);return o(async()=>{n.value=await $fetch("/api/courses")}),(p,d)=>(e(),a("div",null,[(e(!0),a(c,null,i(n.value,t=>(e(),a("div",{key:t.id},u(t.name),1))),128))]))}});export{_ as default};
