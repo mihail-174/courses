@@ -1,9 +1,9 @@
-//
 export default defineNuxtConfig({
-  app: {
-    baseURL: '/courses/'
+  target: 'static',
+  router: {
+    base: '/courses/'
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   ssr: true,
   css: ['~/assets/style.css'],
   modules: [
