@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - main
-#env:
-#  BUILD_FOLDER: .output/public # or .output/public/yourrepositoryname/
+env:
+  BUILD_FOLDER: .output/public
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,8 +22,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          #path: ./.output/public
-          path: ./dist
+          path: ./.output/public
   # Задание по развертыванию
   deploy:
     # Добавьте зависимость в задание сборки
